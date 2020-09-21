@@ -20,3 +20,7 @@ function erreur($msgErreur) {
     require 'Vue/vueErreur.php';
 }
 
+// Affiche la page "A propos"
+function aPropos() {
+    require 'Vue/vueAPropos.php';
+}
