@@ -17,6 +17,13 @@ try {
                 throw new Exception("Identifiant de billet non défini");
         }
         else
+            {
+                if($_GET['action'] == 'apropos') {
+                    aPropos();
+                }
+                else
+                    throw new Exception("Action non valide");
+            }
             throw new Exception("Action non valide");
     }
     else {  // aucune action définie : affichage de l'accueil
